@@ -25,7 +25,7 @@ header {
 aside {
     background-color: #f2f2f2;
     padding: 20px;
-    flex: 1 1 200px;
+    flex: 1 1 150px;
 }
 
 main {
@@ -39,4 +39,14 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* 세로로 아이템을 배치 */
+    }
+
+    .sidebar {
+        flex: 1 1 auto; /* 자동으로 너비 조정 */
+    }
 }
